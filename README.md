@@ -8,7 +8,6 @@
 
 ```
 frappe
-payments
 erpnext
 ```
 
@@ -27,6 +26,22 @@ erpnext
 }
 
 ```
+
+```
+cd frappe-bench
+chown -R frappe:frappe sites
+```
+
+```
+bench new-site erp.pixfar.com --mariadb-root-password admin --admin-password admin --force
+```
+
+```
+bench --site erp.pixfar.com install-app erpnext
+```
+
+
+[latest-v-14 yml](https://github.com/excel-azmin/ERP-Next-V14-Production-Setup/wiki/latest_v14-yml)
 
 
 # add new stack 
